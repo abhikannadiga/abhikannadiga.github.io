@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,79 +7,55 @@
 <title>Abhi Tech Projects</title>
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- Sticky Navbar -->
-<header class="hero fade-in">
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/9110891442" class="float-wa">
+    <img src="whatsapp.png" alt="WhatsApp">
+</a>
+
+<!-- NAVBAR -->
+<header class="hero">
     <nav>
-        <h2 class="logo">Abhi Tech Projects</h2>
+        <img src="logo.png" class="logo">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="reports.html">Reports</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="contact.html" class="btn">Contact</a></li>
+            <li><a href="contact.html" class="btn-grad">Contact</a></li>
         </ul>
     </nav>
 
-    <div class="hero-content">
+    <div class="hero-content fade-up">
         <h1>Engineering & BCA Student Project Help</h1>
         <p>Mini & Main Projects | Reports | Internship | BCA & Engineering</p>
         <p class="hero-info">
-            We develop high-quality mini & main projects with full documentation,
+            We develop high-quality mini & main projects with full documentation, 
             explanation, and support for Engineering & BCA students.
         </p>
         <a href="contact.html" class="cta">Contact Now</a>
     </div>
 </header>
 
-<!-- Floating WhatsApp Button -->
-<a href="https://wa.me/9110891442" class="whatsapp-float" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-</a>
-
-<!-- Mobile Contact Bar -->
-<div class="mobile-contact-bar">
-    <a href="https://wa.me/9110891442">WhatsApp</a>
-    <a href="tel:9110891442">Call</a>
-    <a href="mailto:nnabhn1@gmail.com">Email</a>
-</div>
-
-<!-- JS for Animations -->
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    const elements = document.querySelectorAll(".fade-in");
-    function showElements() {
-        elements.forEach(el => {
-            const rect = el.getBoundingClientRect().top;
-            if (rect < window.innerHeight - 100) {
-                el.classList.add("show");
-            }
-        });
-    }
-    showElements();
-    window.addEventListener("scroll", showElements);
-});
-</script>
+<section class="services">
+    <h2>Our Services</h2>
+    <div class="grid">
+        <div class="card fade-up">Mini Projects</div>
+        <div class="card fade-up">Main Projects</div>
+        <div class="card fade-up">Internship Projects</div>
+        <div class="card fade-up">Simulation Projects</div>
+        <div class="card fade-up">Project Reports</div>
+        <div class="card fade-up">Front Page Design</div>
+    </div>
+</section>
 
 <footer>
-    <div class="footer-content">
-        <h3>Abhi Tech Projects</h3>
-        <p>Your trusted partner for Engineering & BCA mini + main projects.</p>
-
-        <div class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="reports.html">Reports</a>
-            <a href="blog.html">Blog</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </div>
-
-        <p class="copy">© 2025 Abhi Tech Projects | All Rights Reserved</p>
-    </div>
+    <p>© 2025 Abhi Tech Projects | All Rights Reserved</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
