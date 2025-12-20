@@ -9,54 +9,130 @@
 
 <body>
 
-<header class="header-small">
+<header class="projects-header">
     <h1>Our Projects</h1>
-    <p>Engineering & BCA Mini / Main Projects</p>
+    <p>Engineering & BCA Mini / Main Projects With Documentation</p>
 </header>
 
-<section class="projects-section fade-in">
+<div class="search-container">
+    <input type="text" id="searchInput" placeholder="🔍 Search projects...">
+</div>
+
+<div class="filter-container">
+    <button onclick="filterProjects('all')">All</button>
+    <button onclick="filterProjects('iot')">IoT</button>
+    <button onclick="filterProjects('python')">Python</button>
+    <button onclick="filterProjects('ai')">AI</button>
+    <button onclick="filterProjects('web')">Web</button>
+    <button onclick="filterProjects('matlab')">MATLAB</button>
+</div>
+
+<section class="projects-section">
     <div class="project-grid">
 
-        <div class="project-card">
-            <h3>QR Code Attendance System</h3>
-            <p>Python, Flask, MySQL, QR Scanner.</p>
+        <div class="project-card premium iot">
+            <div class="card-img">
+                <img src="https://i.ibb.co/7zYJ0Pj/qr-attendance.jpg">
+            </div>
+            <div class="card-content">
+                <h3>QR Code Attendance System</h3>
+                <div class="tags">
+                    <span>Python</span><span>Flask</span><span>MySQL</span>
+                </div>
+                <p>Automated attendance using QR scanning and real-time database updating.</p>
+            </div>
         </div>
 
-        <div class="project-card">
-            <h3>IoT Smart Home Automation</h3>
-            <p>NodeMCU, Sensors, Blynk App.</p>
+        <div class="project-card premium iot">
+            <div class="card-img">
+                <img src="https://i.ibb.co/5Lg4TcS/smart-home.jpg">
+            </div>
+            <div class="card-content">
+                <h3>IoT Smart Home Automation</h3>
+                <div class="tags">
+                    <span>IoT</span><span>NodeMCU</span><span>Blynk</span>
+                </div>
+                <p>Control home appliances from anywhere using IoT connectivity.</p>
+            </div>
         </div>
 
-        <div class="project-card">
-            <h3>Face Recognition Door Lock</h3>
-            <p>OpenCV, Python, Camera Module.</p>
+        <div class="project-card premium ai">
+            <div class="card-img">
+                <img src="https://i.ibb.co/1mS3tYb/ai-resume.jpg">
+            </div>
+            <div class="card-content">
+                <h3>AI-Based Resume Analyzer</h3>
+                <div class="tags">
+                    <span>AI</span><span>ML</span><span>NLP</span>
+                </div>
+                <p>Analyzes resumes and gives ATS scoring with improvement suggestions.</p>
+            </div>
         </div>
 
-        <div class="project-card">
-            <h3>AI-Based Resume Analyzer</h3>
-            <p>Machine Learning, NLP, ATS Scoring.</p>
+        <div class="project-card premium python">
+            <div class="card-img">
+                <img src="https://i.ibb.co/PxJmYVq/face-recognition.jpg">
+            </div>
+            <div class="card-content">
+                <h3>Face Recognition Door Lock</h3>
+                <div class="tags">
+                    <span>Python</span><span>OpenCV</span><span>AI</span>
+                </div>
+                <p>Advanced home security system using face authentication.</p>
+            </div>
         </div>
 
-        <div class="project-card">
-            <h3>Weather Monitoring System</h3>
-            <p>IoT Sensors, ThingSpeak, ESP8266.</p>
+        <div class="project-card premium matlab">
+            <div class="card-img">
+                <img src="https://i.ibb.co/7y9VGqf/matlab.jpg">
+            </div>
+            <div class="card-content">
+                <h3>MATLAB Control System Simulator</h3>
+                <div class="tags">
+                    <span>MATLAB</span><span>Simulink</span>
+                </div>
+                <p>Control system simulation using transfer functions and real-time plots.</p>
+            </div>
         </div>
 
-        <div class="project-card">
-            <h3>College ERP Website</h3>
-            <p>HTML, CSS, JS, PHP, MySQL.</p>
+        <div class="project-card premium web">
+            <div class="card-img">
+                <img src="https://i.ibb.co/KyTgbLr/erp.jpg">
+            </div>
+            <div class="card-content">
+                <h3>College ERP Management System</h3>
+                <div class="tags">
+                    <span>PHP</span><span>MySQL</span><span>Web</span>
+                </div>
+                <p>Full ERP system with student, staff, and admin dashboards.</p>
+            </div>
         </div>
 
     </div>
 </section>
 
-<footer>
-    <div class="footer-content">
-        <h3>Abhi Tech Projects</h3>
-        <p>Your trusted partner for Engineering & BCA projects.</p>
-        <p class="copy">© 2025 Abhi Tech Projects | All Rights Reserved</p>
-    </div>
-</footer>
+<script>
+document.getElementById("searchInput").addEventListener("keyup", function () {
+    let filter = this.value.toLowerCase();
+    let cards = document.querySelectorAll(".project-card");
+
+    cards.forEach(card => {
+        let text = card.innerText.toLowerCase();
+        card.style.display = text.includes(filter) ? "block" : "none";
+    });
+});
+
+function filterProjects(category) {
+    let cards = document.querySelectorAll(".project-card");
+
+    cards.forEach(card => {
+        card.style.display =
+            category === "all" || card.classList.contains(category)
+                ? "block"
+                : "none";
+    });
+}
+</script>
 
 </body>
 </html>
