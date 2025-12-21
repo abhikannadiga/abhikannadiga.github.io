@@ -1,108 +1,25 @@
-/* GLOBAL */
-body {
-    margin: 0;
-    font-family: Poppins, sans-serif;
-    background: #ffffff;
-}
+body{margin:0;font-family:Poppins,sans-serif;background:#ffffff;}
+nav{display:flex;justify-content:space-between;padding:25px;}
+nav ul{display:flex;list-style:none;}
+nav ul li{margin-left:25px;}
+nav a{color:white;text-decoration:none;}
+.logo-img{height:55px;}
 
-/* NAVBAR */
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 25px;
+.hero{
+background:url('hero.jpg') center/cover no-repeat;
+padding-bottom:220px;
+color:white;
+position:relative;
 }
-nav ul {
-    display: flex;
-    list-style: none;
+.hero::after{
+content:'';
+position:absolute;top:0;left:0;right:0;bottom:0;
+background:rgba(0,0,0,0.45);
 }
-nav ul li { margin-left: 25px; }
-nav a { color: white; text-decoration: none; font-weight: 500; }
+.hero-text{position:relative;margin:120px 50px;}
+.btn{background:#007bff;padding:12px 22px;color:white;border-radius:10px;text-decoration:none;}
 
-.logo-img { height: 55px; }
+.cards{display:flex;gap:25px;padding:20px 40px;}
+.card{background:white;padding:25px;flex:1;border-radius:15px;box-shadow:0 4px 15px rgba(0,0,0,0.12);}
 
-/* HERO SECTION */
-.hero {
-    background: url('hero.jpg') center/cover no-repeat;
-    padding-bottom: 220px;
-    color: white;
-    position: relative;
-}
-
-/* Optional dark overlay */
-.hero::after {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0,0,0,0.45);
-}
-.hero-text {
-    position: relative;
-    margin: 120px 50px;
-}
-.btn {
-    background: #007bff;
-    padding: 12px 22px;
-    color: white;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-/* SERVICES */
-h2 {
-    text-align: center;
-    margin: 40px 0 20px;
-}
-.cards {
-    display: flex;
-    gap: 25px;
-    padding: 20px 40px;
-}
-.card {
-    background: white;
-    padding: 25px;
-    flex: 1;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
-}
-
-/* PRICING */
-.pricing-grid {
-    display: flex;
-    gap: 25px;
-    padding: 20px 40px;
-}
-.price-box {
-    flex: 1;
-    background: white;
-    padding: 25px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
-}
-.featured {
-    border: 3px solid #007bff;
-}
-
-/* WHATSAPP BUTTON */
-.whatsapp-btn {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    background: #25d366;
-    color: white;
-    padding: 17px 22px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-/* FOOTER */
-footer {
-    background: #002b66;
-    color: white;
-    padding: 25px;
-    text-align: center;
-    margin-top: 40px;
-}
+footer{background:#002b66;color:white;padding:25px;text-align:center;margin-top:40px;}

@@ -1,1 +1,1 @@
-console.log('Animations Ready');
+console.log('Loaded');
