@@ -1,9 +1,146 @@
-.page-title {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 32px;
+/* BASIC */
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    background: #ffffff;
+    color: #222;
 }
 
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: #002b66;
+    color: white;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #ffcc00;
+}
+
+/* HERO */
+.hero {
+    background: url('full-bg.png') center/cover no-repeat;
+    padding: 160px 40px;
+    color: white;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    right: 0; bottom: 0;
+    background: rgba(0,0,0,0.45);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background: #ffcc00;
+    padding: 12px 22px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+/* SERVICES */
+.services {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.service-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.service-card {
+    background: white;
+    padding: 25px;
+    width: 260px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* PRICING */
+.pricing {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.pricing-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.price-card {
+    background: white;
+    padding: 25px;
+    width: 260px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.price-card.highlight {
+    background: #002b66;
+    color: white;
+}
+
+/* ABOUT & PAGES */
+.page-section,
+.about-page {
+    padding: 60px 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 32px;
+    color: #002b66;
+}
+
+/* ACCORDION */
 .accordion-container {
     width: 90%;
     max-width: 900px;
@@ -13,23 +150,22 @@
 .accordion-btn {
     width: 100%;
     padding: 15px;
-    font-size: 18px;
-    text-align: left;
-    border: none;
     background: #0a4cff;
     color: white;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
+    margin-bottom: 8px;
+    font-size: 18px;
 }
 
 .accordion-content {
-    display: none;
-    background: #f7f9ff;
-    padding: 15px 20px;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    background: #f4f7ff;
+    border-radius: 8px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+    padding: 0 15px;
 }
 
 .accordion-content ul {
@@ -37,5 +173,44 @@
 }
 
 .accordion-content li {
-    margin: 6px 0;
+    padding: 8px 0;
+}
+
+/* BLOG CARDS */
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 20px;
+}
+
+.blog-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: #000;
+    transition: 0.2s;
+}
+
+.blog-card:hover {
+    transform: scale(1.02);
+}
+
+/* CONTACT */
+.contact-box {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+footer {
+    background: #002b66;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
 }
