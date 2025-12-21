@@ -1,17 +1,41 @@
-body{margin:0;font-family:Poppins,sans-serif;background:#f4f7ff;}
-nav{display:flex;justify-content:space-between;padding:20px;}
-nav ul{display:flex;list-style:none;}
-nav ul li{margin-left:20px;}
-nav a{text-decoration:none;color:#fff;font-weight:500;}
-.logo-img{height:50px;}
-.hero{background:url('banner.jpg') center/cover no-repeat;padding-bottom:200px;color:white;}
-.hero-text{margin:100px 50px;}
-.btn{background:#007bff;padding:12px 20px;color:white;text-decoration:none;border-radius:8px;}
-h2{text-align:center;margin:30px 0;}
-.cards{display:flex;gap:20px;padding:20px;}
-.card{background:white;padding:20px;border-radius:15px;box-shadow:0 4px 12px rgba(0,0,0,0.1);flex:1;}
-.pricing-grid{display:flex;gap:20px;padding:20px;}
-.price-box{background:white;padding:20px;border-radius:15px;flex:1;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,0.1);}
-.featured{border:3px solid #007bff;}
-.whatsapp-btn{position:fixed;bottom:20px;right:20px;background:#25d366;color:white;padding:15px 20px;border-radius:50px;text-decoration:none;font-weight:bold;}
-footer{text-align:center;padding:20px;background:#002b66;color:white;margin-top:40px;}
+.page-title {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 32px;
+}
+
+.accordion-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.accordion-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    text-align: left;
+    border: none;
+    background: #0a4cff;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.accordion-content {
+    display: none;
+    background: #f7f9ff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.accordion-content ul {
+    padding-left: 20px;
+}
+
+.accordion-content li {
+    margin: 6px 0;
+}
