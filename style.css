@@ -1,1 +1,11 @@
-body{font-family:Poppins,sans-serif;}
+body{margin:0;font-family:Poppins;background:#ffffff;}
+nav{display:flex;justify-content:space-between;padding:25px;}
+nav ul{display:flex;list-style:none;}
+nav ul li{margin-left:25px;}
+nav a{color:white;text-decoration:none;font-weight:500;}
+.logo-img{height:50px;}
+.hero{background:url('hero.jpg') center/cover no-repeat;padding-bottom:220px;color:white;position:relative;}
+.hero::after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.45);}
+.hero-text{position:relative;margin:120px 50px;}
+.btn{background:#007bff;padding:12px 20px;color:white;border-radius:10px;text-decoration:none;}
+footer{text-align:center;padding:25px;background:#002b66;color:white;margin-top:40px;}
