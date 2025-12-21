@@ -1,41 +1,11 @@
-.page-title {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 32px;
-}
 
-.accordion-container {
-    width: 90%;
-    max-width: 900px;
-    margin: 30px auto;
-}
-
-.accordion-btn {
-    width: 100%;
-    padding: 15px;
-    font-size: 18px;
-    text-align: left;
-    border: none;
-    background: #0a4cff;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('full-bg.png') no-repeat center center fixed;
+    background-size: cover;
     color: white;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    cursor: pointer;
+    text-shadow: 1px 1px 3px #000;
 }
-
-.accordion-content {
-    display: none;
-    background: #f7f9ff;
-    padding: 15px 20px;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.accordion-content ul {
-    padding-left: 20px;
-}
-
-.accordion-content li {
-    margin: 6px 0;
-}
+h1 { padding: 40px; }
