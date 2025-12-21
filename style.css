@@ -4,7 +4,8 @@ nav ul{display:flex;list-style:none;}
 nav ul li{margin-left:20px;}
 nav a{text-decoration:none;color:#fff;font-weight:500;}
 .logo-img{height:50px;}
-.hero{background:url('banner.jpg') center/cover no-repeat;padding-bottom:200px;color:white;}
+.hero{background: url('A_digital_photograph_on_the_Abhi_Tech_Projects_web.png') center/cover no-repeat;
+;padding-bottom:200px;color:white;}
 .hero-text{margin:100px 50px;}
 .btn{background:#007bff;padding:12px 20px;color:white;text-decoration:none;border-radius:8px;}
 h2{text-align:center;margin:30px 0;}
