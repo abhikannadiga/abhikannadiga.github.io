@@ -1,13 +1,15 @@
-var acc = document.getElementsByClassName("accordion-btn");
+// Accordion open/close
+const accButtons = document.querySelectorAll(".accordion-btn");
 
-for (let i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
+accButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+        btn.classList.toggle("active");
+        const content = btn.nextElementSibling;
+
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
         } else {
-            panel.style.display = "block";
+            content.style.maxHeight = content.scrollHeight + "px";
         }
     });
-}
+});
