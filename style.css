@@ -1,41 +1,11 @@
-.page-title {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 32px;
-}
-
-.accordion-container {
-    width: 90%;
-    max-width: 900px;
-    margin: 30px auto;
-}
-
-.accordion-btn {
-    width: 100%;
-    padding: 15px;
-    font-size: 18px;
-    text-align: left;
-    border: none;
-    background: #0a4cff;
-    color: white;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    cursor: pointer;
-}
-
-.accordion-content {
-    display: none;
-    background: #f7f9ff;
-    padding: 15px 20px;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.accordion-content ul {
-    padding-left: 20px;
-}
-
-.accordion-content li {
-    margin: 6px 0;
-}
+body{margin:0;font-family:Poppins,sans-serif;background:#f4f7ff;color:#222;}
+nav{display:flex;justify-content:space-between;padding:20px;}
+nav ul{display:flex;list-style:none;}
+nav ul li{margin-left:20px;}
+nav a{text-decoration:none;color:#fff;}
+.hero{background:url('https://images.unsplash.com/photo-1598257006469-2c8f068e4f3f') center/cover no-repeat; padding-bottom:120px; color:#fff;}
+.hero-text{margin:80px;text-align:left;}
+.btn{background:#007bff;color:#fff;padding:10px 20px;border-radius:8px;text-decoration:none;}
+.cards{display:flex;gap:20px;padding:20px;}
+.card{background:#fff;padding:20px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.1);flex:1;}
+footer{text-align:center;padding:20px;background:#002b66;color:#fff;}
