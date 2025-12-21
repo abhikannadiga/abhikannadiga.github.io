@@ -1,0 +1,3 @@
+.hero {
+    background: url('coding.jpg') center/cover no-repeat;
+}
