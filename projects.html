@@ -73,4 +73,111 @@
             <li>Automatic Room Light (IR Sensor)</li>
             <li>DC Motor Speed Control</li>
             <li>Overvoltage Protection</li>
-            <li>Load Monitoring
+            <li>Load Monitoring System</li>
+            <li>Street Light Fault Detection</li>
+        </ul>
+    </div>
+
+    <!-- NEW: VLSI -->
+    <button class="accordion-btn">🔶 VLSI – Major Projects (15)</button>
+    <div class="accordion-content">
+        <ul>
+            <li>Low Power ALU Design Using CMOS</li>
+            <li>FPGA Based Traffic Light Controller</li>
+            <li>RISC-V Processor Design & FPGA Implementation</li>
+            <li>UART Transmitter & Receiver using Verilog</li>
+            <li>ASIC Implementation of 4-bit Multiplier</li>
+            <li>Low Power Clock Gating Architecture</li>
+            <li>Carry Look Ahead Adder Design</li>
+            <li>Memory System Design using SRAM/DRAM</li>
+            <li>FIR Filter Implementation using Verilog</li>
+            <li>PLL (Phase Locked Loop) Design in VLSI</li>
+            <li>Digital Signal Processor Architecture</li>
+            <li>High-Speed Multiplier Design</li>
+            <li>VLSI Based FFT Processor</li>
+            <li>Low Power ALU using Pass Transistor Logic</li>
+            <li>FIFO Memory Design using Verilog</li>
+        </ul>
+    </div>
+
+    <!-- NEW: Embedded -->
+    <button class="accordion-btn">🔧 Embedded System Projects (15)</button>
+    <div class="accordion-content">
+        <ul>
+            <li>Smart Street Light using LDR & Arduino</li>
+            <li>Automatic Toll Collection System</li>
+            <li>Smart Helmet with Accident Detection</li>
+            <li>Voice Controlled Home Automation</li>
+            <li>Biometric Attendance System</li>
+            <li>Smart Agriculture Monitoring System</li>
+            <li>Gas Leakage Detection System</li>
+            <li>Ultrasonic Blind Stick</li>
+            <li>RFID Based Door Lock System</li>
+            <li>DHT11 Temperature & Humidity Monitor</li>
+            <li>Alcohol Detection System</li>
+            <li>Smart Energy Meter</li>
+            <li>Water Level Indicator</li>
+            <li>Heartbeat Monitoring System</li>
+            <li>Solar Tracking System</li>
+        </ul>
+    </div>
+
+    <!-- NEW: IoT -->
+    <button class="accordion-btn">🌐 IoT Projects (15)</button>
+    <div class="accordion-content">
+        <ul>
+            <li>IoT Smart Home Automation</li>
+            <li>IoT Weather Monitoring System</li>
+            <li>IoT Health Monitoring (Pulse, SPO2, Temp)</li>
+            <li>IoT Water Level Controller</li>
+            <li>IoT Vehicle Tracking System</li>
+            <li>IoT Air Pollution Monitoring</li>
+            <li>IoT Fire Detection System</li>
+            <li>IoT Smart Waste Management</li>
+            <li>IoT Solar Energy Monitoring</li>
+            <li>IoT Smart Parking System</li>
+            <li>IoT Attendance Monitoring</li>
+            <li>IoT Baby Monitoring</li>
+            <li>IoT Smart Irrigation System</li>
+            <li>IoT Flood Alert System</li>
+            <li>IoT Home Security System</li>
+        </ul>
+    </div>
+
+    <!-- NEW: Software -->
+    <button class="accordion-btn">🧠 Software / AI & ML Projects (15)</button>
+    <div class="accordion-content">
+        <ul>
+            <li>AI Powered Interview Preparation System</li>
+            <li>Customer Support Chatbot</li>
+            <li>Fake News Detection (ML)</li>
+            <li>Face Recognition Attendance System</li>
+            <li>Credit Card Fraud Detection</li>
+            <li>Movie Recommendation System</li>
+            <li>E-commerce Website (MERN Stack)</li>
+            <li>Student Result Prediction (ML)</li>
+            <li>AI Code Review Tool</li>
+            <li>AI Resume Screening System</li>
+            <li>Handwritten Digit Recognition</li>
+            <li>Sentiment Analysis</li>
+            <li>Stock Price Prediction</li>
+            <li>Image Classification (CNN)</li>
+            <li>College ERP System</li>
+        </ul>
+    </div>
+
+</div>
+
+<script>
+    const acc = document.querySelectorAll(".accordion-btn");
+    acc.forEach(btn => {
+        btn.addEventListener("click", function () {
+            this.classList.toggle("active");
+            const content = this.nextElementSibling;
+            content.style.display = content.style.display === "block" ? "none" : "block";
+        });
+    });
+</script>
+
+</body>
+</html>
