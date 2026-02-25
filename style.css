@@ -1,3 +1,52 @@
+/* BASIC */
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    background: #ffffff;
+    color: #222;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: #002b66;
+    color: white;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #ffcc00;
+}
+
+/* PAGE TITLE */
+.page-title {
+    text-align: center;
+    font-size: 32px;
+    color: #002b66;
+    margin-top: 20px;
+}
+
 /* ACCORDION */
 .accordion-container {
     width: 90%;
