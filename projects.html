@@ -78,7 +78,7 @@
         </ul>
     </div>
 
-    <!-- NEW: VLSI -->
+    <!-- VLSI -->
     <button class="accordion-btn">🔶 VLSI – Major Projects (15)</button>
     <div class="accordion-content">
         <ul>
@@ -100,7 +100,7 @@
         </ul>
     </div>
 
-    <!-- NEW: Embedded -->
+    <!-- Embedded -->
     <button class="accordion-btn">🔧 Embedded System Projects (15)</button>
     <div class="accordion-content">
         <ul>
@@ -122,7 +122,7 @@
         </ul>
     </div>
 
-    <!-- NEW: IoT -->
+    <!-- IoT -->
     <button class="accordion-btn">🌐 IoT Projects (15)</button>
     <div class="accordion-content">
         <ul>
@@ -137,14 +137,14 @@
             <li>IoT Solar Energy Monitoring</li>
             <li>IoT Smart Parking System</li>
             <li>IoT Attendance Monitoring</li>
-            <li>IoT Baby Monitoring</li>
+            <li>IoT Baby Monitoring System</li>
             <li>IoT Smart Irrigation System</li>
             <li>IoT Flood Alert System</li>
             <li>IoT Home Security System</li>
         </ul>
     </div>
 
-    <!-- NEW: Software -->
+    <!-- Software -->
     <button class="accordion-btn">🧠 Software / AI & ML Projects (15)</button>
     <div class="accordion-content">
         <ul>
@@ -153,7 +153,7 @@
             <li>Fake News Detection (ML)</li>
             <li>Face Recognition Attendance System</li>
             <li>Credit Card Fraud Detection</li>
-            <li>Movie Recommendation System</li>
+            <li>Movie Recommendation Engine</li>
             <li>E-commerce Website (MERN Stack)</li>
             <li>Student Result Prediction (ML)</li>
             <li>AI Code Review Tool</li>
@@ -168,15 +168,27 @@
 
 </div>
 
+<!-- FIXED ACCORDION SCRIPT -->
 <script>
-    const acc = document.querySelectorAll(".accordion-btn");
-    acc.forEach(btn => {
-        btn.addEventListener("click", function () {
-            this.classList.toggle("active");
-            const content = this.nextElementSibling;
-            content.style.display = content.style.display === "block" ? "none" : "block";
+const btns = document.querySelectorAll(".accordion-btn");
+
+btns.forEach((btn) => {
+    btn.addEventListener("click", function () {
+
+        // close others
+        btns.forEach((item) => {
+            if (item !== this) {
+                item.classList.remove("active");
+                item.nextElementSibling.style.display = "none";
+            }
         });
+
+        // toggle current
+        this.classList.toggle("active");
+        const panel = this.nextElementSibling;
+        panel.style.display = panel.style.display === "block" ? "none" : "block";
     });
+});
 </script>
 
 </body>
