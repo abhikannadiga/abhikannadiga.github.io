@@ -34,8 +34,8 @@
             <li>Student Feedback Management System</li>
             <li>Online Hostel Room Allocation</li>
             <li>E-Commerce Review Analyzer</li>
-            <li>Face Blur Tool for Privacy</li>
-            <li>Smart Attendance System (QR Based)</li>
+            <li>Face Blur Tool</li>
+            <li>Smart Attendance System (QR)</li>
             <li>Cloud Library Management</li>
             <li>Two-Factor Authentication Login</li>
             <li>College Enquiry Chatbot</li>
@@ -49,11 +49,11 @@
     <div class="accordion-content">
         <ul>
             <li>AI Resume Analyzer (ATS)</li>
-            <li>College ERP System</li>
-            <li>AI Exam Monitoring (Cheat Detection)</li>
-            <li>Internship Recommendation (AI)</li>
+            <li>College ERP (Admin + Faculty + Students)</li>
+            <li>AI Exam Monitoring</li>
+            <li>Internship Recommendation System</li>
             <li>Digital Certificate Generator (QR)</li>
-            <li>Fake News Detection</li>
+            <li>Fake News Detection (ML)</li>
             <li>Encrypted Cloud Storage</li>
             <li>AI Expense Tracker</li>
             <li>Driver Drowsiness Detection</li>
@@ -82,21 +82,21 @@
     <button class="accordion-btn">🔶 VLSI – Major Projects (15)</button>
     <div class="accordion-content">
         <ul>
-            <li>Low Power ALU Design Using CMOS</li>
+            <li>Low Power ALU Design</li>
             <li>FPGA Based Traffic Light Controller</li>
             <li>RISC-V Processor Design</li>
-            <li>UART Tx & Rx using Verilog</li>
-            <li>ASIC Based Multiplier</li>
-            <li>Low Power Clock Gating</li>
+            <li>UART Tx & Rx Verilog</li>
+            <li>ASIC Multiplier</li>
+            <li>Clock Gating Architecture</li>
             <li>Carry Look Ahead Adder</li>
-            <li>SRAM / DRAM Memory Design</li>
+            <li>SRAM/DRAM Memory Design</li>
             <li>FIR Filter using Verilog</li>
-            <li>PLL Design </li>
-            <li>DSP Architecture</li>
+            <li>PLL VLSI Design</li>
+            <li>DSP Processor Architecture</li>
             <li>High-Speed Multiplier</li>
             <li>FFT Processor</li>
             <li>Pass Transistor ALU</li>
-            <li>FIFO Memory Design</li>
+            <li>FIFO Memory Verilog</li>
         </ul>
     </div>
 
@@ -105,19 +105,19 @@
     <div class="accordion-content">
         <ul>
             <li>Smart Street Light</li>
-            <li>Automatic Toll Collection</li>
-            <li>Smart Helmet</li>
+            <li>Automatic Toll System</li>
+            <li>Smart Helmet Alert</li>
             <li>Voice Home Automation</li>
-            <li>Biometric Attendance System</li>
+            <li>Biometric Attendance</li>
             <li>Smart Agriculture System</li>
-            <li>Gas Leakage Detection</li>
+            <li>Gas Leakage Alert</li>
             <li>Ultrasonic Blind Stick</li>
-            <li>RFID Door Lock System</li>
-            <li>DHT11 Temp Monitor</li>
+            <li>RFID Door Lock</li>
+            <li>DHT11 Monitoring</li>
             <li>Alcohol Detection</li>
             <li>Smart Energy Meter</li>
             <li>Water Level Controller</li>
-            <li>Heartbeat Monitoring</li>
+            <li>Heartbeat Monitor</li>
             <li>Solar Tracking</li>
         </ul>
     </div>
@@ -128,19 +128,19 @@
         <ul>
             <li>IoT Home Automation</li>
             <li>Weather Monitoring</li>
-            <li>Health Monitoring</li>
-            <li>Water Level System</li>
-            <li>Vehicle Tracking</li>
+            <li>IoT Health Monitoring</li>
+            <li>Water Level Controller</li>
+            <li>Vehicle Tracking GPS</li>
             <li>Air Quality Monitoring</li>
             <li>IoT Fire Detection</li>
-            <li>Smart Waste System</li>
-            <li>Solar Monitoring</li>
-            <li>Smart Parking</li>
+            <li>Smart Waste Bin</li>
+            <li>Solar Power IoT Monitor</li>
+            <li>IoT Smart Parking</li>
             <li>IoT Attendance System</li>
-            <li>IoT Baby Monitoring</li>
+            <li>IoT Baby Monitor</li>
             <li>Smart Irrigation</li>
             <li>Flood Alert System</li>
-            <li>IoT Home Security</li>
+            <li>IoT Security System</li>
         </ul>
     </div>
 
@@ -150,32 +150,31 @@
         <ul>
             <li>AI Interview System</li>
             <li>Chatbot System</li>
-            <li>Fake News Detection</li>
+            <li>Fake News Detector</li>
             <li>Face Recognition Attendance</li>
             <li>Credit Card Fraud Detector</li>
-            <li>Movie Recommendation System</li>
-            <li>MERN E-commerce Website</li>
+            <li>Movie Recommendation</li>
+            <li>MERN E-commerce</li>
             <li>Student Result Prediction</li>
             <li>AI Code Review Tool</li>
             <li>AI Resume Screener</li>
-            <li>Handwritten Digit Classifier</li>
-            <li>Sentiment Analysis Tool</li>
-            <li>Stock Prediction System</li>
-            <li>CNN Image Classifier</li>
+            <li>Digit Recognition</li>
+            <li>Sentiment Analysis</li>
+            <li>Stock Prediction</li>
+            <li>CNN Classifier</li>
             <li>College ERP System</li>
         </ul>
     </div>
 
 </div>
 
-<!-- WORKING ACCORDION SCRIPT -->
+<!-- Accordion Script -->
 <script>
 const btns = document.querySelectorAll(".accordion-btn");
 
 btns.forEach((btn) => {
     btn.addEventListener("click", function () {
 
-        // close others
         btns.forEach((item) => {
             if (item !== this) {
                 item.classList.remove("active");
@@ -183,7 +182,6 @@ btns.forEach((btn) => {
             }
         });
 
-        // toggle current
         this.classList.toggle("active");
         const panel = this.nextElementSibling;
         panel.style.display = panel.style.display === "block" ? "none" : "block";
