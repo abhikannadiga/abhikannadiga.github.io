@@ -64,7 +64,7 @@ nav ul li a.active {
     cursor: pointer;
     margin-bottom: 8px;
     font-size: 18px;
-    transition: 0.2s;
+    transition: 0.2s ease;
 }
 
 .accordion-btn.active {
@@ -72,12 +72,17 @@ nav ul li a.active {
 }
 
 .accordion-content {
-    display: none;
-    padding: 15px;
+    max-height: 0;
+    overflow: hidden;
     background: #ffffff;
     border-radius: 10px;
-    margin-bottom: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 12px;
+    transition: max-height 0.35s ease;
+    padding: 0 15px;
+}
+
+.accordion-content.open {
+    padding: 15px;
 }
 
 .accordion-content ul {
