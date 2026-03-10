@@ -79,17 +79,13 @@ text-decoration:none;
 font-weight:600;
 }
 
-
-
 /* FEATURE CARDS */
 
 .features{
 display:flex;
 justify-content:center;
 gap:25px;
-
 margin-top:-70px;
-
 padding:20px;
 }
 
@@ -97,19 +93,14 @@ padding:20px;
 background:white;
 padding:25px;
 width:260px;
-
 border-radius:14px;
-
 box-shadow:0 10px 25px rgba(0,0,0,0.08);
-
 transition:0.3s;
 }
 
 .feature-card:hover{
 transform:translateY(-8px);
 }
-
-
 
 /* ABOUT */
 
@@ -137,8 +128,6 @@ display:inline-block;
 
 margin-top:20px;
 }
-
-
 
 /* FOOTER */
 
